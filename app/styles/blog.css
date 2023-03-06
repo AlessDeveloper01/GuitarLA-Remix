@@ -1,0 +1,78 @@
+.blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .blog {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .blog {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.post {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.post .contenido {
+    padding: 1.5rem;
+}
+
+.post .contenido h3 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin: 0;
+    text-align: center;
+}
+
+.post .fecha {
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--primary);
+}
+
+.post .resumen {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.enlace {
+    margin-top: 2rem;
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.enlace:hover {
+    background-color: var(--primary);
+}
+
+.post .texto {
+    white-space: pre-wrap;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
